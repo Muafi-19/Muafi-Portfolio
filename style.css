@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align top */
+  padding: 60px;
+  gap: 40px;
+}
+
+/* Left section same as before */
+.left-section {
+  flex: 1;
+  max-width: 60%;
+}
+
+/* New right section for image */
+.right-section {
+  flex: 0 0 300px; /* fixed width so image area is stable */
+  position: relative;
+}
+
+.image-blob-container {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  margin-top: 0; /* ensure no margin pushing it down */
+}
+
+.profile-pic {
+  width: 100%;
+  border-radius: 16px;
+  z-index: 2;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.blob-svg {
+  position: absolute;
+  top: -20px;
+  left: -30px;
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+  opacity: 0.95;
+}
+.image-blob-container {
+  position: relative;
+  width: 300px;   /* Increase width so blob fully shows */
+  height: 300px;  /* Same height */
+  overflow: visible; /* Allow blob to show outside bounds */
+  margin: 0;
+}
+
+.blob-svg {
+  position: absolute;
+  top: -40px;     /* Pull it up a bit */
+  left: -40px;    /* Pull it left a bit */
+  width: 350px;   /* Make blob bigger than container */
+  height: 350px;
+  z-index: 1;
+  opacity: 0.95;
+  pointer-events: none;
+}
+/* Just a test change */
+

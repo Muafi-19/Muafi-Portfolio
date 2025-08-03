@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muafiqa Imran Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start; /* Align top */
+      padding: 60px;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .left-section {
+      flex: 1;
+      max-width: 60%;
+    }
+
+    .left-section h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .left-section h1 span {
+      color: #4fb4ac;
+    }
+
+    .left-section h2 {
+      margin-top: 20px;
+      color: #4fb4ac;
+    }
+
+    .left-section ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    /* Right section for image */
+    .right-section {
+      flex: 0 0 300px; /* fixed width so image area is stable */
+      position: relative;
+    }
+
+    .image-blob-container {
+      position: relative;
+      width: 250px;
+      height: 300px;
+      margin: 0; /* no margin pushing down */
+    }
+
+    .profile-pic {
+  width: 100%;
+  border-radius: 16px;
+  z-index: 2;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      
+       
+  }
+     
+
+    .blob-svg {
+      position: absolute;
+      top: -20px;
+      left: -30px;
+      width: 300px;
+      height: 300px;
+      z-index: 1;
+      opacity: 0.95;
+      pointer-events: none;
+    }
+    .image-blob-container {
+  position: relative;
+  width: 300px;   /* Increase width so blob fully shows */
+  height: 300px;  /* Same height */
+  overflow: visible; /* Allow blob to show outside bounds */
+  margin: 0;
+}
+
+.blob-svg {
+  position: absolute;
+  top: -60px;     /* Pull it up a bit */
+  left: -80px;    /* Pull it left a bit */
+  width: 500px;   /* Make blob bigger than container */
+  height: 500px;
+  z-index: 1;
+  opacity: 0.95;
+  pointer-events: none;
+}
+
+  </style>
+</head>
+<body>
+  <!-- This is just a test change -->
+
+  <div class="container">
+    <div class="left-section">
+      <h1>Hello, I’m <span>Muafiqa Imran</span></h1>
+      <p><strong>Email:</strong> muafiqaimran@gmail.com</p>
+      <p><strong>Phone:</strong> +94754266535</p>
+      <p><strong>Location:</strong> Colombo, Sri Lanka</p>
+
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Esoft Metro Campus</strong> – HND in Software Engineering (2024–2025)</li>
+        <li><strong>Esoft Metro Campus</strong> – Diploma in Information Technology (2022–2024)</li>
+        <li><strong>Bishops College</strong> – G.C.E O'Level (2011–2022)</li>
+      </ul>
+
+      <h2>Languages</h2>
+      <ul>
+        <li>English – Native</li>
+        <li>Sinhala – First Language</li>
+        <li>Tamil – Basic</li>
+      </ul>
+
+      <h2>Programming Languages</h2>
+      <ul>
+        <li>HTML – ★★★★☆</li>
+        <li>CSS – ★★★★☆</li>
+        <li>PHP – ★★★★☆</li>
+        <li>Python – ★★★☆☆</li>
+        <li>Java – ★★☆☆☆</li>
+        <li>JavaScript – ★★☆☆☆</li>
+      </ul>
+
+      <h2>Core Skills</h2>
+      <ul>
+        <li>JavaScript, Python, Java, PHP, HTML, CSS</li>
+        <li>Database Management (MySQL, SQL Server)</li>
+        <li>Version Control with Git & GitHub</li>
+        <li>OOP, Clean Code & SOLID Principles</li>
+        <li>Agile/Scrum Workflow</li>
+      </ul>
+
+      <h2>Soft Skills</h2>
+      <ul>
+        <li>Organized</li>
+            <li>Team Player</li>
+            <li>Creative</li>
+            <li>Responsible</li>
+            <li>Time Management</li>
+        
+      </ul>
+    </div>
+
+    <div class="right-section">
+      <div class="image-blob-container">
+        <img src="images/profile.jpg" alt="Muafiqa Imran" class="profile-pic" />
+        <svg
+          class="blob-svg"
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="#4fb4ac"
+            d="M43.2,-62.4C57.7,-54.4,72.7,-43.6,76.2,-29.9C79.6,-16.2,71.4,-0.7,63.9,13.3C56.4,27.3,49.6,39.9,39.7,52.7C29.9,65.5,17,78.6,2.8,75.2C-11.5,71.8,-23.1,51.9,-34.4,38.5C-45.7,25,-56.6,17.9,-65.6,5.3C-74.7,-7.3,-81.9,-24.5,-76.8,-37.9C-71.6,-51.3,-54,-60.9,-38.2,-67.4C-22.4,-73.9,-11.2,-77.3,2,-80.1C15.3,-82.8,30.6,-85.1,43.2,-62.4Z"
+            transform="translate(100 100)"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
